@@ -1,32 +1,31 @@
-package demo.Assigments;
+package Assigments;
+
+class Student {
+
+    String name;
+    int age;
+    String grade;
+
+    Student(String name, int age, String grade) {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+    }
+
+    void displayDetails() {
+        System.out.println("Student Information:");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+    }
+}
 
 public class Assigment3 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		 int age = 20;
-	        boolean ID = true;
-	        
-	        if (age >= 18) {
-	            System.out.println("Person is eligible to vote.");
-	        } else {
-	            System.out.println("Person is not eligible to vote.");
-	        }
-	        
-	        if (age >= 18) {
+    public static void main(String[] args) {
 
-	           
-	            if (ID == true) {
-	                System.out.println("Person is eligible to vote and has a valid ID.");
-	            } else {
-	                System.out.println("Person is eligible to vote but does not have a valid ID.");
-	            }
+        Student student1 = new Student("John Doe", 20, "A");
+        student1.displayDetails();
 
-	        } else {
-	            System.out.println("Person is not eligible to vote.");
-	        }
-
-	}
-
+    }
 }
